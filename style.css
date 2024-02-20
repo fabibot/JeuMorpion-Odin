@@ -1,0 +1,79 @@
+html{
+    background-color: #568989;
+    font-size: 62,5%;
+    --main-color : #568989;
+    --dark-color : #393f6b;
+}
+
+h1, h2, h3, .startButton{
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 7rem;
+    text-align: center;
+    text-decoration: underline dotted var(--dark-color);
+    margin: 40px;
+}
+
+h2{
+    font-size: 100px;
+    margin: 5px 5px;
+    color: var(--dark-color);
+}
+
+h3{
+    font-size: 1.4rem;
+    margin: 0px 20px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;    
+}
+button{
+    border: solid 2px white;
+    border-radius: 20px ;
+    background-color: var(--main-color);
+    padding: 5px 15px;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover{
+    background-color: #393f6b;
+}
+
+.hiddenFirst{
+    visibility: hidden;
+}
+
+#divBoardGame{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 40px;
+    
+}
+
+.boardGameSides{
+    width: 200px;
+}
+
+
+.boardGame{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+}
+
+.case{
+  
+    border: solid 3px white;
+    display: flex;
+    justify-content: center;
+    
+}
