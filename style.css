@@ -2,10 +2,11 @@ html{
     background-color: #568989;
     font-size: 62,5%;
     --main-color : #568989;
-    --dark-color : #393f6b;
+    --dark-color : rgb(57, 63, 107);
+    --soft-dark-color : rgba(57, 63, 107, 0.2);
 }
 
-h1, h2, h3, .startButton{
+h1, h2, h3, .startButton, .textEnd{
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -15,13 +16,20 @@ h1{
     font-size: 7rem;
     text-align: center;
     text-decoration: underline dotted var(--dark-color);
-    margin: 40px;
+    margin: 40px 40px 0px 40px;
 }
 
-h2{
+h2, .pawn, .textEnd{
     font-size: 100px;
     margin: 5px 5px;
     color: var(--dark-color);
+}
+.textEnd{
+    font-weight: 700;
+    font-size: 85px;
+}
+#pawnTurn{
+    font-size: 2.3rem;
 }
 
 h3{
@@ -43,7 +51,7 @@ button{
 }
 
 button:hover{
-    background-color: #393f6b;
+    background-color: var(--dark-color);
 }
 
 .hiddenFirst{
@@ -54,14 +62,12 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: end;
-    padding: 40px;
-    
+    padding: 40px;   
 }
 
 .boardGameSides{
     width: 200px;
 }
-
 
 .boardGame{
     display: grid;
@@ -71,9 +77,7 @@ button:hover{
 }
 
 .case{
-  
     border: solid 3px white;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
