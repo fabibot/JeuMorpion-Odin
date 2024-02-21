@@ -146,8 +146,3 @@ function endOfTheGame(winner){
         screenCase.forEach((elements) => { elements.replaceWith(elements.cloneNode(true));
     });
 }
-
-
-//le message égalité apparait pas quand on remplie tout les cases (c'est parce que 
-// j'ai supprimé l'le endofthegame qui s'active quand on a atteint le nombre max de round (il n'y a plus 
-// de totalRound et roundConter))
